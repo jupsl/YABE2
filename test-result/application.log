@@ -1,0 +1,5 @@
+28 Feb 2014 10:14:10,331 INFO  ~ Starting /home/juan/yabe
+28 Feb 2014 10:14:13,355 WARN  ~ You're running Play! in DEV mode
+28 Feb 2014 10:14:14,294 INFO  ~ Listening for HTTP on port 9000 (Waiting a first request to start) ...
+28 Feb 2014 10:20:24,915 INFO  ~ Connected to jdbc:postgresql://localhost/blog
+28 Feb 2014 10:20:28,726 INFO  ~ Application 'yabe' is now started !
