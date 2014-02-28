@@ -9,15 +9,22 @@ import java.util.*;
 import javax.persistence.*;
 import play.db.jpa.*;
 import play.db.jpa.Model;
+//import org.hibernate.envers.Audited;
+import play.data.validation.Required;
+import net.sf.oval.constraint.Email;
 /**
  *
  * @author juan
  */
 @Entity 
 @Table(name="usuario")
+//@Audited
 public class User extends Model {
+    @Email
     public String email;
+    @Required
     public String password;
+    @Required
     public String nombre;
     public String primer_apellido;
     public String segundo_apellido;

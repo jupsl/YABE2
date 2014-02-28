@@ -2,3 +2,5 @@
 
 require:
     - play
+    - play -> crud
+    - play -> chronostamp 0.1
