@@ -2,6 +2,17 @@
 ---
 # Test data
 
+Tag(play):
+    name:           Play
+ 
+Tag(architecture):
+    name:           Architecture
+ 
+Tag(test):
+    name:           Test
+ 
+Tag(mvc):
+    name:           MVC   
 User(bobEsponja):
     email:          bob@gmail.com
     password:       secret
@@ -17,6 +28,10 @@ Post(firstBobPost):
     title:          About the model layer
     postedAt:       2009-06-14
     author:         bobEsponja
+    tags:
+                    - play
+                    - architecture
+                    - mvc
     content:        >
                     The model has a central position in a Play! application. It is the domain-specific 
                     representation of the information on which the application operates.
@@ -32,6 +47,10 @@ Post(secondBobPost):
     title:          Just a test of YABE
     postedAt:       2009-03-25
     author:         bobEsponja
+    tags:
+                    - play
+                    - architecture
+                    - mvc
     content:        >
                     Well, it's just a test.
                     
@@ -39,6 +58,10 @@ Post(jeffPost):
     title:          The MVC application
     postedAt:       2009-06-06
     author:         jeff
+    tags:
+                    - play
+                    - architecture
+                    - mvc
     content:        >
                     A Play! application follows the MVC architectural pattern as applied to the 
                     architecture of the Web.
@@ -67,4 +90,4 @@ Comment(c3):
                     This post is useless ?
     postedAt:       2009-04-05
     post:           secondBobPost    
-                 
+       

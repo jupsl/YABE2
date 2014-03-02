@@ -46,7 +46,27 @@
     <input type="submit" value="Submit your comment" />
 </p>
 #{/form}
-
+#{if _as != 'full'}
+    <span class="post-comments">
+        &nbsp;|&nbsp; ${_post.comments.size() ?: 'no'}
+        comment${_post.comments.size().pluralize()}
+        #{if _post.comments}
+            , latest by ${_post.comments[0].author}
+        #{/if}
+    </span>
+#{/if}
+#{elseif _post.tags}
+    <span class="post-tags">
+        - Tagged
+        #{list items:_post.tags, as:'tag'}
+            <a href="#">${tag}</a>${tag_isLast ? '' : ', '}
+        #{/list}
+    </span>
+#{/elseif}
+- Tagged
+#{list items:_post.tags, as:'tag'}
+    <a href="@{Application.listTagged(tag.name)}">${tag}</a>${tag_isLast ? '' : ', '}
+#{/list}
 <script type="text/javascript" charset="utf-8">
     $(function() {         
         // Expose the form 
