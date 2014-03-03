@@ -26,7 +26,7 @@ public class BasicTest extends UnitTest {
     @Test
 public void createPost() {
     // Create a new user and save it
-    User bob = new User("bob@gmail.com", "secret", "Bob","Miller","houdson").save();
+    User bob = new User("luis@gmail.com", "luis1234", "luis","martinez","garcia").save();
     
     // Create a new post
     new Post("My first post","Hello World", bob).save();
@@ -119,7 +119,7 @@ public void fullTest() {
  
     // Try to connect as users
     assertNotNull(User.connect("bob@gmail.com", "secret"));
-    assertNotNull(User.connect("jeff@gmail.com", "secret"));
+    assertNotNull(User.connect("luis@gmail.com", "luis1234"));
     assertNull(User.connect("jeff@gmail.com", "badpassword"));
     assertNull(User.connect("tom@gmail.com", "secret"));
  
@@ -147,7 +147,7 @@ public void fullTest() {
 @Test
 public void testTags() {
     // Create a new user and save it
-    User bob = new User("bob@gmail.com", "secret", "Bob","Miller","Smith").save();
+    User bob = new User("adm@gmail.com", "zas4321", "jose","gonzalez","suarez").save();
  
     // Create a new post
     Post bobPost = new Post( "My first post", "Hello world",bob).save();

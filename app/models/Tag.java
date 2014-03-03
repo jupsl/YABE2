@@ -10,12 +10,13 @@ package models;
  */
 import java.util.*;
 import javax.persistence.*;
+import play.data.validation.Required;
  
 import play.db.jpa.*;
  
 @Entity
 public class Tag extends Model implements Comparable<Tag> {
- 
+    @Required
     public String name;
  
     private Tag(String name) {
@@ -42,4 +43,5 @@ public class Tag extends Model implements Comparable<Tag> {
     ).fetch();
     return result;
 }
+    
 }
