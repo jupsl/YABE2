@@ -14,3 +14,6 @@ fullname=Full name
 isAdmin=User is admin
 created_at=Created At
 updated_at=Updated At
+secure.username=Your email:
+secure.password=Your password:
+secure.signin=Log in now
