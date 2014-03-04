@@ -1,7 +1,9 @@
-03 Mar 2014 15:00:04,489 INFO  ~ Starting /home/juan/yabe
-03 Mar 2014 15:00:04,500 INFO  ~ Module chronostamp is available (/home/juan/yabe/modules/chronostamp-0.1)
-03 Mar 2014 15:00:04,502 INFO  ~ Module crud is available (/home/juan/play-1.2.7/modules/crud)
-03 Mar 2014 15:00:07,624 WARN  ~ You're running Play! in DEV mode
-03 Mar 2014 15:00:08,029 INFO  ~ Listening for HTTP on port 9000 (Waiting a first request to start) ...
-03 Mar 2014 15:03:53,047 INFO  ~ Connected to jdbc:postgresql://localhost/blog
-03 Mar 2014 15:04:00,593 INFO  ~ Application 'yabe' is now started !
+04 Mar 2014 14:30:08,220 INFO  ~ Starting /home/juan/yabe
+04 Mar 2014 14:30:08,233 WARN  ~ Declaring modules in application.conf is deprecated. Use dependencies.yml instead (module.secure)
+04 Mar 2014 14:30:08,240 INFO  ~ Module secure is available (/home/juan/play-1.2.7/modules/secure)
+04 Mar 2014 14:30:08,248 INFO  ~ Module chronostamp is available (/home/juan/yabe/modules/chronostamp-0.1)
+04 Mar 2014 14:30:08,250 INFO  ~ Module crud is available (/home/juan/play-1.2.7/modules/crud)
+04 Mar 2014 14:30:11,348 WARN  ~ You're running Play! in DEV mode
+04 Mar 2014 14:30:11,992 INFO  ~ Listening for HTTP on port 9000 (Waiting a first request to start) ...
+04 Mar 2014 14:30:42,036 INFO  ~ Connected to jdbc:postgresql://localhost/blog
+04 Mar 2014 14:30:46,986 INFO  ~ Application 'yabe' is now started !

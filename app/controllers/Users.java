@@ -10,6 +10,10 @@ package controllers;
  *
  * @author juan
  */
+import play.*;
+import play.mvc.*;
+ 
+@With(Secure.class)
 public class Users extends CRUD {
     
 }
